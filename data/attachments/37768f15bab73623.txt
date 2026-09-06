@@ -1,3 +1,0 @@
-12:13:35 | INFO | Creating new authentication session
-12:13:41 | INFO | Navigating to https://crm.anhtester.com/admin
-12:13:45 | INFO | Authenticated as: admin@example.com
