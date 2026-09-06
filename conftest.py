@@ -13,6 +13,8 @@ import os
 from playwright.sync_api import Browser, BrowserContext, Page, sync_playwright
 
 from page.dashboard_page import DashboardPage
+from page.customer_page import CustomerPage
+from page.contract_page import ContractPage
 from page.login_page import LoginPage
 from utils import load_json, logger
 from utils.allure_helper import AllureHelper
@@ -158,6 +160,18 @@ def login_page(page: Page) -> LoginPage:
 def dashboard_page(page: Page) -> DashboardPage:
     """Fixture to provide DashboardPage instance."""
     return DashboardPage(page)
+
+
+@pytest.fixture
+def customer_page(page: Page) -> CustomerPage:
+    """Fixture to provide CustomerPage instance."""
+    return CustomerPage(page)
+
+
+@pytest.fixture
+def contract_page(page: Page) -> ContractPage:
+    """Fixture to provide ContractPage instance."""
+    return ContractPage(page)
 
 
 # ==================== Test Data Fixtures ====================

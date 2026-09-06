@@ -4,15 +4,20 @@ from playwright.sync_api import Page, Locator
 
 class LoginPage(BasePage):
     """Page Object Model for login functionality."""
+
+    # ==================== Login Page Locators ====================
+
     EMAIL = "#email"
     PASSWORD = "#password"
     SUBMIT_BUTTON = "//button[@type='submit']"
-    DASHBOARD_MENU = "//li[@class='menu-item-dashboard active']//a"
+    DASHBOARD_MENU = "//li[@class='menu-item-dashboard']//a"
     LOGO = "//div[@id='logo']//a//img"
-    
+
+    # ==================== Initialization ====================
+
     def __init__(self, page: Page):
         super().__init__(page)
-    
+
     # ==================== Page Actions ====================
     
     def login(self, username: str, password: str) -> "LoginPage":
@@ -32,9 +37,12 @@ class LoginPage(BasePage):
         self.fill(self.EMAIL, username, "username")
         self.fill(self.PASSWORD, password, "password")
         self.click(self.SUBMIT_BUTTON, "submit button")
+        self.wait_for_load_page()
         self.expect_visible(self.DASHBOARD_MENU, "dashboard")
         return self
-    
+
+    # ==================== Login Verification ====================
+
     def is_dashboard_visible(self) -> bool:
         """
         Check if dashboard is displayed (indicates successful login).

@@ -230,7 +230,7 @@ class DashboardPage(BasePage):
             self.icon_notifications,
         ]
 
-    # ==================== Verification Methods (Assertions) ====================
+    # ==================== Dashboard Verification ====================
 
     def verify_left_menu_is_visible(self) -> bool:
         """

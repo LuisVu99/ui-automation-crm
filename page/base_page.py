@@ -2,6 +2,8 @@ from playwright.sync_api import Page, expect, Locator, TimeoutError
 from typing import Optional, Union
 import logging
 from pathlib import Path
+from urllib.parse import urljoin
+import os
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -11,7 +13,9 @@ class BasePage:
     Base page class providing robust wrapper methods for Playwright automation.
     Includes built-in explicit waits and error handling to minimize flakiness.
     """
-    
+
+    # ==================== Configuration and Initialization ====================
+
     # Default timeout for operations (milliseconds)
     DEFAULT_TIMEOUT = 30000  # 30 seconds
     
@@ -24,9 +28,9 @@ class BasePage:
             base_url: Optional base URL for navigation
         """
         self.page: Page = page
-        self.base_url: Optional[str] = base_url
+        self.base_url: Optional[str] = base_url or os.getenv("BASE_URL")
         logger.info(f"Initialized {self.__class__.__name__}")
-    
+
     # ==================== Navigation Methods ====================
     
     def navigate(self, url: str) -> None:
@@ -36,7 +40,7 @@ class BasePage:
         Args:
             url: The URL to navigate to (absolute or relative if base_url is set)
         """
-        full_url = url if url.startswith("http") else f"{self.base_url or ''}{url}"
+        full_url = urljoin(f"{self.base_url.rstrip('/')}/", url.lstrip("/"))
         logger.info(f"Navigating to: {full_url}")
         self.page.goto(full_url, wait_until="networkidle")
     
@@ -207,7 +211,18 @@ class BasePage:
         """
         logger.info(f"Waiting for element to be hidden: {name or locator}")
         self.page.locator(locator).wait_for(state="hidden", timeout=timeout)
-    
+
+    def wait_for_load_page(self, timeout: int = DEFAULT_TIMEOUT) -> None:
+            """
+            Wait for page load successfully.
+            
+            Args:
+                name: Wait for page load
+                timeout: Maximum time to wait in milliseconds
+            """
+            logger.info(f"Waiting for page load")
+            self.page.wait_for_load_state(state="networkidle", timeout=timeout)
+
     # ==================== Text Methods ====================
     
     def get_text(self, locator: str, name: str = "", timeout: int = DEFAULT_TIMEOUT) -> str:
@@ -277,7 +292,7 @@ class BasePage:
         if attr_value is None:
             return False
         return value is None or attr_value == value
-    
+
     # ==================== Interaction Methods ====================
     
     def hover(self, locator: str, name: str = "", timeout: int = DEFAULT_TIMEOUT) -> None:
@@ -399,7 +414,7 @@ class BasePage:
         """
         logger.info(f"Checking if checked: {name or locator}")
         return self.page.locator(locator).is_checked(timeout=timeout)
-    
+
     # ==================== List/Count Methods ====================
     
     def get_count(self, locator: str, name: str = "") -> int:
@@ -430,7 +445,7 @@ class BasePage:
         logger.info(f"Getting all text from: {name or locator}")
         elements = self.page.locator(locator)
         return [elements.nth(i).inner_text().strip() for i in range(elements.count())]
-    
+
     # ==================== Utility Methods ====================
     
     def execute_script(self, script: str, arg: Optional[any] = None) -> any:
