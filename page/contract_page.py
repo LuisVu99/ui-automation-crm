@@ -35,7 +35,7 @@ class ContractPage(BasePage):
     CONTRACT_TABLE_ROWS = "#contracts tbody tr"
     CONTRACT_SUBJECT_LINK = "(//table[@id='contracts']//tbody//tr/td[2])[1]"  # TODO: Add locator strategy and value
     EDIT_BUTTON = "//a[.='Edit ']"  # TODO: Add locator for the Edit action revealed on contract hover
-    DELETE_BUTTON = "//a[@class='text-danger _delete']"  # TODO: Add locator strategy and value
+    DELETE_BUTTON = "(//a[@class='text-danger _delete'])[1]"  # TODO: Add locator strategy and value
     DELETE_SUCCESS_TOAST = "#alert_float_1"  # TODO: Add locator strategy and value
 
     # ==================== Initialization ====================
