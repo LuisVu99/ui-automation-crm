@@ -1,9 +1,29 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"Create a customer and verify it is shown on the detail page.","4547","test_create_customer_successfully","tests","2026-09-06","passed","2026-09-06","","test_create_customer","",""
+"Create a customer and verify it is shown on the detail page.","4352","test_create_customer_successfully","tests","2026-09-06","passed","2026-09-06","","test_create_customer","",""
+"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Start Date]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
+"Verify left menu is visible on dashboard","70","Verify left menu is visible","tests","2026-09-06","passed","2026-09-06","TestDashboardDisplay","test_verify_db_main_element_display","",""
+"Verify progress bar fraction and percentage match expected values
+        
+        Args:
+            dashboard_page: Dashboard page object
+            widget_type: Type of progress bar (invoice, lead, project, task_not_finish)
+            expected_fraction: Expected fraction value (e.g., ""3 / 6"")
+            expected_percent: Expected percentage value (e.g., ""50.00"")
+        ","125","Verify project progress bar values","tests","2026-09-06","passed","2026-09-06","TestProgressBars","test_verify_db_main_element_display","",""
+"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Subject]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
+"Verify all header icons are displayed","189","Verify all header icons are displayed","tests","2026-09-06","passed","2026-09-06","TestDashboardDisplay","test_verify_db_main_element_display","",""
+"Verify dashboard menu item is highlighted","70","Verify dashboard menu is highlighted","tests","2026-09-06","passed","2026-09-06","TestDashboardDisplay","test_verify_db_main_element_display","",""
+"Create a minimal contract, edit its required subject, and verify the update.","19642","test_edit_contract_successfully","tests","2026-09-06","passed","2026-09-06","","test_edit_contract","",""
 "The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Subject]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
-"Verify all header icons are displayed","327","Verify all header icons are displayed","tests","2026-09-06","passed","2026-09-06","TestDashboardDisplay","test_verify_db_main_element_display","",""
-"Verify all dashboard widgets are displayed","445","Verify all widgets are displayed","tests","2026-09-06","passed","2026-09-06","TestDashboardDisplay","test_verify_db_main_element_display","",""
-"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Customer]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
+"Verify progress bar fraction and percentage match expected values
+        
+        Args:
+            dashboard_page: Dashboard page object
+            widget_type: Type of progress bar (invoice, lead, project, task_not_finish)
+            expected_fraction: Expected fraction value (e.g., ""3 / 6"")
+            expected_percent: Expected percentage value (e.g., ""50.00"")
+        ","96","Verify task_not_finish progress bar values","tests","2026-09-06","passed","2026-09-06","TestProgressBars","test_verify_db_main_element_display","",""
+"","80","Verify Dashboard page display successfully after login","tests","2026-09-06","passed","2026-09-06","","test_verify_dashboard_display","",""
 "The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Start Date]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
 "Verify progress bar fraction and percentage match expected values
         
@@ -12,45 +32,25 @@
             widget_type: Type of progress bar (invoice, lead, project, task_not_finish)
             expected_fraction: Expected fraction value (e.g., ""3 / 6"")
             expected_percent: Expected percentage value (e.g., ""50.00"")
-        ","220","Verify project progress bar values","tests","2026-09-06","passed","2026-09-06","TestProgressBars","test_verify_db_main_element_display","",""
-"Verify progress bar fraction and percentage match expected values
-        
-        Args:
-            dashboard_page: Dashboard page object
-            widget_type: Type of progress bar (invoice, lead, project, task_not_finish)
-            expected_fraction: Expected fraction value (e.g., ""3 / 6"")
-            expected_percent: Expected percentage value (e.g., ""50.00"")
-        ","241","Verify task_not_finish progress bar values","tests","2026-09-06","passed","2026-09-06","TestProgressBars","test_verify_db_main_element_display","",""
-"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Subject]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
+        ","96","Verify lead progress bar values","tests","2026-09-06","passed","2026-09-06","TestProgressBars","test_verify_db_main_element_display","",""
+"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Contract Value]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
 "Verify search results match the search query
         
         Args:
             dashboard_page: Dashboard page object
             search_test_data: Fixture containing search username
-        ","4534","Verify search results match query","tests","2026-09-06","passed","2026-09-06","TestSearchFunctionality","test_verify_db_main_element_display","",""
-"Verify left menu is visible on dashboard","86","Verify left menu is visible","tests","2026-09-06","passed","2026-09-06","TestDashboardDisplay","test_verify_db_main_element_display","",""
-"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Start Date]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
-"Create a minimal contract, then delete it from the contracts list.","12817","test_delete_contract_successfully","tests","2026-09-06","failed","2026-09-06","","test_delete_contract","",""
-"Verify progress bar fraction and percentage match expected values
-        
-        Args:
-            dashboard_page: Dashboard page object
-            widget_type: Type of progress bar (invoice, lead, project, task_not_finish)
-            expected_fraction: Expected fraction value (e.g., ""3 / 6"")
-            expected_percent: Expected percentage value (e.g., ""50.00"")
-        ","226","Verify invoice progress bar values","tests","2026-09-06","passed","2026-09-06","TestProgressBars","test_verify_db_main_element_display","",""
-"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Contract Value]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
-"Create a minimal contract, edit its required subject, and verify the update.","18155","test_edit_contract_successfully","tests","2026-09-06","passed","2026-09-06","","test_edit_contract","",""
-"","82","Verify Dashboard page display successfully after login","tests","2026-09-06","passed","2026-09-06","","test_verify_dashboard_display","",""
-"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Customer]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
-"Verify progress bar fraction and percentage match expected values
-        
-        Args:
-            dashboard_page: Dashboard page object
-            widget_type: Type of progress bar (invoice, lead, project, task_not_finish)
-            expected_fraction: Expected fraction value (e.g., ""3 / 6"")
-            expected_percent: Expected percentage value (e.g., ""50.00"")
-        ","254","Verify lead progress bar values","tests","2026-09-06","passed","2026-09-06","TestProgressBars","test_verify_db_main_element_display","",""
-"Create a contract for Anh Tester 0109 and verify the saved details.","9180","test_create_contract_successfully","tests","2026-09-06","passed","2026-09-06","","test_create_contract","",""
+        ","3849","Verify search results match query","tests","2026-09-06","passed","2026-09-06","TestSearchFunctionality","test_verify_db_main_element_display","",""
 "The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Contract Value]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
-"Verify dashboard menu item is highlighted","129","Verify dashboard menu is highlighted","tests","2026-09-06","passed","2026-09-06","TestDashboardDisplay","test_verify_db_main_element_display","",""
+"Create a contract for Anh Tester 0109 and verify the saved details.","9530","test_create_contract_successfully","tests","2026-09-06","passed","2026-09-06","","test_create_contract","",""
+"Verify all dashboard widgets are displayed","407","Verify all widgets are displayed","tests","2026-09-06","passed","2026-09-06","TestDashboardDisplay","test_verify_db_main_element_display","",""
+"Create a minimal contract, then delete it from the contracts list.","14916","test_delete_contract_successfully","tests","2026-09-06","passed","2026-09-06","","test_delete_contract","",""
+"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Customer]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
+"Verify progress bar fraction and percentage match expected values
+        
+        Args:
+            dashboard_page: Dashboard page object
+            widget_type: Type of progress bar (invoice, lead, project, task_not_finish)
+            expected_fraction: Expected fraction value (e.g., ""3 / 6"")
+            expected_percent: Expected percentage value (e.g., ""50.00"")
+        ","98","Verify invoice progress bar values","tests","2026-09-06","passed","2026-09-06","TestProgressBars","test_verify_db_main_element_display","",""
+"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Customer]","tests","2026-09-06","skipped","2026-09-06","","test_sort_contracts","",""
