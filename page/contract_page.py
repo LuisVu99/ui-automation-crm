@@ -199,6 +199,7 @@ class ContractPage(BasePage):
         """Search the contracts list by Subject."""
         self.type_text(self.CONTRACT_SEARCH_INPUT, subject, "Contract search")
         self.wait_for_selector(self.CONTRACT_ROW, "Contract search result")
+        self.wait_for_load_page()
 
     # ==================== Edit Contract ====================
 
