@@ -1,3 +1,0 @@
-11:54:10 | INFO | Navigating to https://crm.anhtester.com/admin
-11:54:14 | INFO | Authenticated as: admin@example.com
-11:54:29 | ERROR | Test failed. Screenshot saved: screenshots/test_delete_contract_successfully.png
