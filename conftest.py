@@ -91,7 +91,7 @@ def browser() -> Generator[Browser, None, None]:
         Browser: Chromium browser instance
     """
     with sync_playwright() as p:
-        browser_instance = p.chromium.launch(headless=False)
+        browser_instance = p.chromium.launch(headless=True)
         yield browser_instance
         browser_instance.close()
 
