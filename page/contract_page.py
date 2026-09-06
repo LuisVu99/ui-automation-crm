@@ -36,6 +36,10 @@ class ContractPage(BasePage):
     CONTRACT_SUBJECT_LINK = "//a[.='{contract_name}']"  # TODO: Add locator strategy and value
     EDIT_BUTTON = "//a[.='Edit ']"  # TODO: Add locator for the Edit action revealed on contract hover
     DELETE_BUTTON = "//a[@class='text-danger _delete']"  # TODO: Add locator strategy and value
+    CONTRACT_DELETE_BUTTON = (
+        "//tr[.//a[normalize-space(.)='{subject}']]"
+        "//a[contains(concat(' ', normalize-space(@class), ' '), ' _delete ')]"
+    )
     DELETE_SUCCESS_TOAST = "#alert_float_1"  # TODO: Add locator strategy and value
 
     # ==================== Initialization ====================
@@ -205,9 +209,10 @@ class ContractPage(BasePage):
 
     def show_delete_action(self, subject: str) -> None:
         """Hover the matching contract Subject to reveal row actions."""
-        contract_subject = self.CONTRACT_SUBJECT_LINK.format(contract_name = subject)
+        contract_subject = self.CONTRACT_SUBJECT_LINK.format(contract_name=subject)
+        self._delete_button_locator = self.CONTRACT_DELETE_BUTTON.format(subject=subject)
         self.hover(contract_subject, f"Contract Subject: {subject}")
-        self.expect_visible(self.DELETE_BUTTON, "Delete contract button")
+        self.expect_visible(self._delete_button_locator, "Delete contract button")
 
     def show_edit_action(self, subject: str) -> None:
         """Hover the matching contract Subject to reveal the Edit action."""
@@ -279,7 +284,7 @@ class ContractPage(BasePage):
 
         # Đăng ký handler bắt sự kiện dialog trước khi click
         self.page.once("dialog", handle_dialog)
-        self.click(self.DELETE_BUTTON, "Delete contract button")
+        self.click(self._delete_button_locator, "Delete contract button")
         self.wait_for_load_page()
 
     def verify_contract_deleted(self) -> None:
