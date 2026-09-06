@@ -1,3 +1,0 @@
-INFO     automation:conftest.py:70 Creating new authentication session
-INFO     automation:conftest.py:139 Navigating to https://crm.anhtester.com/admin/authentication
-INFO     automation:conftest.py:141 Authenticated as: admin@example.com

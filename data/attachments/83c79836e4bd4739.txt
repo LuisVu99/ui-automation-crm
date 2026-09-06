@@ -1,0 +1,8 @@
+11:53:39 | INFO | Creating new authentication session
+11:53:46 | INFO | Navigating to https://crm.anhtester.com/admin
+11:53:50 | INFO | Authenticated as: admin@example.com
+11:54:01 | INFO | Navigating to https://crm.anhtester.com/admin
+11:54:05 | INFO | Authenticated as: admin@example.com
+11:54:10 | INFO | Navigating to https://crm.anhtester.com/admin
+11:54:14 | INFO | Authenticated as: admin@example.com
+11:54:29 | ERROR | Test failed. Screenshot saved: screenshots/test_delete_contract_successfully.png
