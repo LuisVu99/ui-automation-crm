@@ -33,9 +33,9 @@ class ContractPage(BasePage):
     CONTRACT_ROW = "//table[@id='contracts']//tbody//tr"  # TODO: Add locator strategy and value
     CONTRACT_HEADERS = "#contracts thead th"
     CONTRACT_TABLE_ROWS = "#contracts tbody tr"
-    CONTRACT_SUBJECT_LINK = "(//table[@id='contracts']//tbody//tr/td[2])[1]"  # TODO: Add locator strategy and value
+    CONTRACT_SUBJECT_LINK = "//a[.='{contract_name}']"  # TODO: Add locator strategy and value
     EDIT_BUTTON = "//a[.='Edit ']"  # TODO: Add locator for the Edit action revealed on contract hover
-    DELETE_BUTTON = "(//a[@class='text-danger _delete'])[1]"  # TODO: Add locator strategy and value
+    DELETE_BUTTON = "//a[@class='text-danger _delete']"  # TODO: Add locator strategy and value
     DELETE_SUCCESS_TOAST = "#alert_float_1"  # TODO: Add locator strategy and value
 
     # ==================== Initialization ====================
@@ -205,12 +205,14 @@ class ContractPage(BasePage):
 
     def show_delete_action(self, subject: str) -> None:
         """Hover the matching contract Subject to reveal row actions."""
-        self.hover(self.CONTRACT_SUBJECT_LINK, f"Contract Subject: {subject}")
+        contract_subject = self.CONTRACT_SUBJECT_LINK.format(contract_name = subject)
+        self.hover(contract_subject, f"Contract Subject: {subject}")
         self.expect_visible(self.DELETE_BUTTON, "Delete contract button")
 
     def show_edit_action(self, subject: str) -> None:
         """Hover the matching contract Subject to reveal the Edit action."""
-        self.hover(self.CONTRACT_SUBJECT_LINK, f"Contract Subject: {subject}")
+        contract_subject = self.CONTRACT_SUBJECT_LINK.format(contract_name = subject)
+        self.hover(contract_subject, f"Contract Subject: {subject}")
         self.expect_visible(self.EDIT_BUTTON, "Edit contract button")
 
     def open_edit_form(self) -> None:
