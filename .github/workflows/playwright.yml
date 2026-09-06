@@ -52,6 +52,7 @@ jobs:
           ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
 
       - name: Upload allure results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
@@ -59,6 +60,7 @@ jobs:
 
   allure-report:
     needs: test
+    if: always()
     runs-on: ubuntu-latest
     permissions:
       contents: write
