@@ -1,2 +1,0 @@
-13:41:26 | INFO | Navigating to https://crm.anhtester.com/admin
-13:41:30 | INFO | Authenticated as: admin@example.com
