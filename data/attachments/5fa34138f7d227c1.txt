@@ -1,2 +1,0 @@
-02:07:52 | INFO | Creating new authentication session
-02:07:58 | INFO | Navigating to https://crm.anhtester.com/admin
