@@ -1,12 +1,7 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Start Date]","tests","2026-09-24","skipped","2026-09-24","","test_sort_contracts","",""
-"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Subject]","tests","2026-09-24","skipped","2026-09-24","","test_sort_contracts","",""
-"The first click sorts the currently displayed contracts ascending.","1","test_sort_contracts_by_column_ascending[Customer]","tests","2026-09-24","skipped","2026-09-24","","test_sort_contracts","",""
-"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Contract Value]","tests","2026-09-24","skipped","2026-09-24","","test_sort_contracts","",""
-"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Customer]","tests","2026-09-24","skipped","2026-09-24","","test_sort_contracts","",""
-"Verify dashboard menu item is highlighted","84","Verify dashboard menu is highlighted","tests","2026-09-24","passed","2026-09-24","TestDashboardDisplay","test_verify_db_main_element_display","",""
-"","82","Verify Dashboard page display successfully after login","tests","2026-09-24","passed","2026-09-24","","test_verify_dashboard_display","",""
-"Create a minimal contract, edit its required subject, and verify the update.","18712","test_edit_contract_successfully","tests","2026-09-24","passed","2026-09-24","","test_edit_contract","",""
+"","87","Verify Dashboard page display successfully after login","tests","2026-09-26","passed","2026-09-26","","test_verify_dashboard_display","",""
+"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Start Date]","tests","2026-09-26","skipped","2026-09-26","","test_sort_contracts","",""
+"Create a minimal contract, then delete it from the contracts list.","22922","test_delete_contract_successfully","tests","2026-09-26","passed","2026-09-26","","test_delete_contract","",""
 "Verify progress bar fraction and percentage match expected values
         
         Args:
@@ -14,10 +9,7 @@
             widget_type: Type of progress bar (invoice, lead, project, task_not_finish)
             expected_fraction: Expected fraction value (e.g., ""3 / 6"")
             expected_percent: Expected percentage value (e.g., ""50.00"")
-        ","224","Verify project progress bar values","tests","2026-09-24","failed","2026-09-24","TestProgressBars","test_verify_db_main_element_display","",""
-"Create a minimal contract, then delete it from the contracts list.","14949","test_delete_contract_successfully","tests","2026-09-24","passed","2026-09-24","","test_delete_contract","",""
-"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Start Date]","tests","2026-09-24","skipped","2026-09-24","","test_sort_contracts","",""
-"Verify all dashboard widgets are displayed","498","Verify all widgets are displayed","tests","2026-09-24","passed","2026-09-24","TestDashboardDisplay","test_verify_db_main_element_display","",""
+        ","104","Verify task_not_finish progress bar values","tests","2026-09-26","failed","2026-09-26","TestProgressBars","test_verify_db_main_element_display","",""
 "Verify progress bar fraction and percentage match expected values
         
         Args:
@@ -25,7 +17,7 @@
             widget_type: Type of progress bar (invoice, lead, project, task_not_finish)
             expected_fraction: Expected fraction value (e.g., ""3 / 6"")
             expected_percent: Expected percentage value (e.g., ""50.00"")
-        ","230","Verify invoice progress bar values","tests","2026-09-24","passed","2026-09-24","TestProgressBars","test_verify_db_main_element_display","",""
+        ","107","Verify project progress bar values","tests","2026-09-26","failed","2026-09-26","TestProgressBars","test_verify_db_main_element_display","",""
 "Verify progress bar fraction and percentage match expected values
         
         Args:
@@ -33,9 +25,9 @@
             widget_type: Type of progress bar (invoice, lead, project, task_not_finish)
             expected_fraction: Expected fraction value (e.g., ""3 / 6"")
             expected_percent: Expected percentage value (e.g., ""50.00"")
-        ","176","Verify task_not_finish progress bar values","tests","2026-09-24","failed","2026-09-24","TestProgressBars","test_verify_db_main_element_display","",""
-"Create a customer and verify it is shown on the detail page.","4674","test_create_customer_successfully","tests","2026-09-24","passed","2026-09-24","","test_create_customer","",""
-"Verify left menu is visible on dashboard","138","Verify left menu is visible","tests","2026-09-24","passed","2026-09-24","TestDashboardDisplay","test_verify_db_main_element_display","",""
+        ","118","Verify invoice progress bar values","tests","2026-09-26","passed","2026-09-26","TestProgressBars","test_verify_db_main_element_display","",""
+"Create a contract for Anh Tester 0109 and verify the saved details.","10199","test_create_contract_successfully","tests","2026-09-26","passed","2026-09-26","","test_create_contract","",""
+"Verify all header icons are displayed","319","Verify all header icons are displayed","tests","2026-09-26","passed","2026-09-26","TestDashboardDisplay","test_verify_db_main_element_display","",""
 "Verify progress bar fraction and percentage match expected values
         
         Args:
@@ -43,14 +35,22 @@
             widget_type: Type of progress bar (invoice, lead, project, task_not_finish)
             expected_fraction: Expected fraction value (e.g., ""3 / 6"")
             expected_percent: Expected percentage value (e.g., ""50.00"")
-        ","219","Verify lead progress bar values","tests","2026-09-24","passed","2026-09-24","TestProgressBars","test_verify_db_main_element_display","",""
-"Create a contract for Anh Tester 0109 and verify the saved details.","9483","test_create_contract_successfully","tests","2026-09-24","passed","2026-09-24","","test_create_contract","",""
+        ","118","Verify lead progress bar values","tests","2026-09-26","passed","2026-09-26","TestProgressBars","test_verify_db_main_element_display","",""
+"Create a minimal contract, edit its required subject, and verify the update.","19986","test_edit_contract_successfully","tests","2026-09-26","passed","2026-09-26","","test_edit_contract","",""
+"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Start Date]","tests","2026-09-26","skipped","2026-09-26","","test_sort_contracts","",""
+"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Subject]","tests","2026-09-26","skipped","2026-09-26","","test_sort_contracts","",""
+"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Contract Value]","tests","2026-09-26","skipped","2026-09-26","","test_sort_contracts","",""
+"Create a customer and verify it is shown on the detail page.","4743","test_create_customer_successfully","tests","2026-09-26","passed","2026-09-26","","test_create_customer","",""
+"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Customer]","tests","2026-09-26","skipped","2026-09-26","","test_sort_contracts","",""
+"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Subject]","tests","2026-09-26","skipped","2026-09-26","","test_sort_contracts","",""
 "Verify search results match the search query
         
         Args:
             dashboard_page: Dashboard page object
             search_test_data: Fixture containing search username
-        ","4034","Verify search results match query","tests","2026-09-24","passed","2026-09-24","TestSearchFunctionality","test_verify_db_main_element_display","",""
-"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Subject]","tests","2026-09-24","skipped","2026-09-24","","test_sort_contracts","",""
-"Verify all header icons are displayed","351","Verify all header icons are displayed","tests","2026-09-24","passed","2026-09-24","TestDashboardDisplay","test_verify_db_main_element_display","",""
-"The second click reverses the order of the currently displayed rows.","0","test_sort_contracts_by_column_descending_on_second_click[Contract Value]","tests","2026-09-24","skipped","2026-09-24","","test_sort_contracts","",""
+        ","3997","Verify search results match query","tests","2026-09-26","passed","2026-09-26","TestSearchFunctionality","test_verify_db_main_element_display","",""
+"Verify all dashboard widgets are displayed","479","Verify all widgets are displayed","tests","2026-09-26","passed","2026-09-26","TestDashboardDisplay","test_verify_db_main_element_display","",""
+"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Contract Value]","tests","2026-09-26","skipped","2026-09-26","","test_sort_contracts","",""
+"Verify dashboard menu item is highlighted","86","Verify dashboard menu is highlighted","tests","2026-09-26","passed","2026-09-26","TestDashboardDisplay","test_verify_db_main_element_display","",""
+"Verify left menu is visible on dashboard","89","Verify left menu is visible","tests","2026-09-26","passed","2026-09-26","TestDashboardDisplay","test_verify_db_main_element_display","",""
+"The first click sorts the currently displayed contracts ascending.","0","test_sort_contracts_by_column_ascending[Customer]","tests","2026-09-26","skipped","2026-09-26","","test_sort_contracts","",""
