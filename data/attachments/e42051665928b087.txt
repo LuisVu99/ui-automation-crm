@@ -1,0 +1,33 @@
+03:21:45 | INFO | Creating new authentication session
+03:21:57 | INFO | Navigating to https://crm.anhtester.com/admin
+03:22:00 | INFO | Authenticated as: admin@example.com
+03:22:09 | INFO | Navigating to https://crm.anhtester.com/admin
+03:22:12 | INFO | Authenticated as: admin@example.com
+03:22:16 | INFO | Navigating to https://crm.anhtester.com/admin
+03:22:19 | INFO | Authenticated as: admin@example.com
+03:22:34 | INFO | Navigating to https://crm.anhtester.com/admin
+03:22:37 | INFO | Authenticated as: admin@example.com
+03:22:55 | INFO | Navigating to https://crm.anhtester.com/admin
+03:22:59 | INFO | Authenticated as: admin@example.com
+03:22:59 | INFO | Navigating to https://crm.anhtester.com/admin
+03:23:02 | INFO | Authenticated as: admin@example.com
+03:23:03 | INFO | Navigating to https://crm.anhtester.com/admin
+03:23:06 | INFO | Authenticated as: admin@example.com
+03:23:06 | INFO | Navigating to https://crm.anhtester.com/admin
+03:23:10 | INFO | Authenticated as: admin@example.com
+03:23:10 | INFO | Navigating to https://crm.anhtester.com/admin
+03:23:14 | INFO | Authenticated as: admin@example.com
+03:23:14 | INFO | Navigating to https://crm.anhtester.com/admin
+03:23:18 | INFO | Authenticated as: admin@example.com
+03:23:22 | INFO | Navigating to https://crm.anhtester.com/admin
+03:23:25 | INFO | Authenticated as: admin@example.com
+03:23:25 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[invoice_progress].png
+03:23:26 | INFO | Navigating to https://crm.anhtester.com/admin
+03:23:29 | INFO | Authenticated as: admin@example.com
+03:23:29 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[lead_progress].png
+03:23:29 | INFO | Navigating to https://crm.anhtester.com/admin
+03:23:33 | INFO | Authenticated as: admin@example.com
+03:23:33 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[project_progress].png
+03:23:33 | INFO | Navigating to https://crm.anhtester.com/admin
+03:23:37 | INFO | Authenticated as: admin@example.com
+03:23:37 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[task_progress].png
