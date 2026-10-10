@@ -1,3 +1,0 @@
-03:23:22 | INFO | Navigating to https://crm.anhtester.com/admin
-03:23:25 | INFO | Authenticated as: admin@example.com
-03:23:25 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[invoice_progress].png

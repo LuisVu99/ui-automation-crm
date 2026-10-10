@@ -1,0 +1,33 @@
+03:04:28 | INFO | Creating new authentication session
+03:04:33 | INFO | Navigating to https://crm.anhtester.com/admin
+03:04:37 | INFO | Authenticated as: admin@example.com
+03:04:46 | INFO | Navigating to https://crm.anhtester.com/admin
+03:04:49 | INFO | Authenticated as: admin@example.com
+03:04:53 | INFO | Navigating to https://crm.anhtester.com/admin
+03:04:57 | INFO | Authenticated as: admin@example.com
+03:05:11 | INFO | Navigating to https://crm.anhtester.com/admin
+03:05:14 | INFO | Authenticated as: admin@example.com
+03:05:33 | INFO | Navigating to https://crm.anhtester.com/admin
+03:05:37 | INFO | Authenticated as: admin@example.com
+03:05:37 | INFO | Navigating to https://crm.anhtester.com/admin
+03:05:40 | INFO | Authenticated as: admin@example.com
+03:05:40 | INFO | Navigating to https://crm.anhtester.com/admin
+03:05:44 | INFO | Authenticated as: admin@example.com
+03:05:44 | INFO | Navigating to https://crm.anhtester.com/admin
+03:05:48 | INFO | Authenticated as: admin@example.com
+03:05:48 | INFO | Navigating to https://crm.anhtester.com/admin
+03:05:51 | INFO | Authenticated as: admin@example.com
+03:05:52 | INFO | Navigating to https://crm.anhtester.com/admin
+03:05:55 | INFO | Authenticated as: admin@example.com
+03:05:59 | INFO | Navigating to https://crm.anhtester.com/admin
+03:06:03 | INFO | Authenticated as: admin@example.com
+03:06:03 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[chromium-invoice_progress].png
+03:06:03 | INFO | Navigating to https://crm.anhtester.com/admin
+03:06:07 | INFO | Authenticated as: admin@example.com
+03:06:07 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[chromium-lead_progress].png
+03:06:07 | INFO | Navigating to https://crm.anhtester.com/admin
+03:06:10 | INFO | Authenticated as: admin@example.com
+03:06:10 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[chromium-project_progress].png
+03:06:11 | INFO | Navigating to https://crm.anhtester.com/admin
+03:06:14 | INFO | Authenticated as: admin@example.com
+03:06:14 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[chromium-task_progress].png
