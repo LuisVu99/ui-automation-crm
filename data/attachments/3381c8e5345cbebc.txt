@@ -1,0 +1,34 @@
+04:12:56 | INFO | Creating new authentication session
+04:13:02 | INFO | Navigating to https://crm.anhtester.com/admin
+04:13:07 | INFO | Authenticated as: admin@example.com
+04:13:38 | ERROR | Test failed. Screenshot saved: screenshots/test_create_contract_successfully[chromium].png
+04:13:40 | INFO | Navigating to https://crm.anhtester.com/admin
+04:13:44 | INFO | Authenticated as: admin@example.com
+04:14:16 | ERROR | Test failed. Screenshot saved: screenshots/test_create_customer_successfully[chromium].png
+04:14:17 | INFO | Navigating to https://crm.anhtester.com/admin
+04:14:21 | INFO | Authenticated as: admin@example.com
+04:14:52 | ERROR | Test failed. Screenshot saved: screenshots/test_delete_contract_successfully[chromium].png
+04:14:54 | INFO | Navigating to https://crm.anhtester.com/admin
+04:14:57 | INFO | Authenticated as: admin@example.com
+04:15:29 | ERROR | Test failed. Screenshot saved: screenshots/test_edit_contract_successfully[chromium].png
+04:15:30 | INFO | Navigating to https://crm.anhtester.com/admin
+04:15:35 | INFO | Authenticated as: admin@example.com
+04:15:35 | INFO | Navigating to https://crm.anhtester.com/admin
+04:15:39 | INFO | Authenticated as: admin@example.com
+04:15:39 | INFO | Navigating to https://crm.anhtester.com/admin
+04:15:43 | INFO | Authenticated as: admin@example.com
+04:15:44 | INFO | Navigating to https://crm.anhtester.com/admin
+04:15:48 | INFO | Authenticated as: admin@example.com
+04:15:48 | INFO | Navigating to https://crm.anhtester.com/admin
+04:15:52 | INFO | Authenticated as: admin@example.com
+04:15:53 | INFO | Navigating to https://crm.anhtester.com/admin
+04:15:57 | INFO | Authenticated as: admin@example.com
+04:16:02 | INFO | Navigating to https://crm.anhtester.com/admin
+04:16:06 | INFO | Authenticated as: admin@example.com
+04:16:06 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[chromium-invoice_progress].png
+04:16:06 | INFO | Navigating to https://crm.anhtester.com/admin
+04:16:10 | INFO | Authenticated as: admin@example.com
+04:16:10 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[chromium-lead_progress].png
+04:16:11 | INFO | Navigating to https://crm.anhtester.com/admin
+04:16:15 | INFO | Authenticated as: admin@example.com
+04:16:15 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[chromium-project_progress].png
