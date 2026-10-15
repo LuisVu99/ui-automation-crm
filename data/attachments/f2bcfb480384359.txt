@@ -1,3 +1,0 @@
-04:14:54 | INFO | Navigating to https://crm.anhtester.com/admin
-04:14:57 | INFO | Authenticated as: admin@example.com
-04:15:29 | ERROR | Test failed. Screenshot saved: screenshots/test_edit_contract_successfully[chromium].png

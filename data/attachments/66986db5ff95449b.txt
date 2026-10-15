@@ -1,3 +1,0 @@
-04:16:11 | INFO | Navigating to https://crm.anhtester.com/admin
-04:16:15 | INFO | Authenticated as: admin@example.com
-04:16:15 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[chromium-project_progress].png
