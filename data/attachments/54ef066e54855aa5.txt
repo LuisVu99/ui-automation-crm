@@ -1,1 +1,0 @@
-INFO     automation:conftest.py:141 Navigating to https://crm.anhtester.com/admin
