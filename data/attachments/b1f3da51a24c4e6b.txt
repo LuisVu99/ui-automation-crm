@@ -1,7 +1,0 @@
-04:21:02 | INFO | Creating new authentication session
-04:21:07 | INFO | Navigating to https://crm.anhtester.com/admin
-04:21:09 | INFO | Authenticated as: admin@example.com
-04:21:41 | ERROR | Test failed. Screenshot saved: screenshots/test_create_contract_successfully[chromium].png
-04:21:42 | INFO | Navigating to https://crm.anhtester.com/admin
-04:21:45 | INFO | Authenticated as: admin@example.com
-04:22:17 | ERROR | Test failed. Screenshot saved: screenshots/test_create_customer_successfully[chromium].png

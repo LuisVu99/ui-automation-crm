@@ -1,0 +1,24 @@
+03:58:59 | INFO | Creating new authentication session
+03:59:04 | INFO | Navigating to https://crm.anhtester.com/admin
+03:59:06 | INFO | Authenticated as: admin@example.com
+03:59:15 | INFO | Navigating to https://crm.anhtester.com/admin
+03:59:18 | INFO | Authenticated as: admin@example.com
+03:59:22 | INFO | Navigating to https://crm.anhtester.com/admin
+03:59:25 | INFO | Authenticated as: admin@example.com
+03:59:40 | INFO | Navigating to https://crm.anhtester.com/admin
+03:59:42 | INFO | Authenticated as: admin@example.com
+04:00:00 | INFO | Navigating to https://crm.anhtester.com/admin
+04:00:03 | INFO | Authenticated as: admin@example.com
+04:00:03 | INFO | Navigating to https://crm.anhtester.com/admin
+04:00:06 | INFO | Authenticated as: admin@example.com
+04:00:06 | INFO | Navigating to https://crm.anhtester.com/admin
+04:00:09 | INFO | Authenticated as: admin@example.com
+04:00:10 | INFO | Navigating to https://crm.anhtester.com/admin
+04:00:12 | INFO | Authenticated as: admin@example.com
+04:00:12 | INFO | Navigating to https://crm.anhtester.com/admin
+04:00:15 | INFO | Authenticated as: admin@example.com
+04:00:16 | INFO | Navigating to https://crm.anhtester.com/admin
+04:00:18 | INFO | Authenticated as: admin@example.com
+04:00:23 | INFO | Navigating to https://crm.anhtester.com/admin
+04:00:26 | INFO | Authenticated as: admin@example.com
+04:00:26 | ERROR | Test failed. Screenshot saved: screenshots/test_verify_progress_bar[chromium-invoice_progress].png
